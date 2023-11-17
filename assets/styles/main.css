@@ -20,8 +20,3 @@ body{
     height: 100vh;
     background-color: var(--primary-color);
 }
-
-.footer{
-    height: 15%;
-    background-color: var(--white);
-}

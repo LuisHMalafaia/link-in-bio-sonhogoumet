@@ -1,0 +1,22 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    height: 15%;
+    padding: 10px 40px;
+    background-color: var(--white);
+}
+
+.footer__title{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.footer__description{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
