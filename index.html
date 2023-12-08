@@ -6,6 +6,7 @@
     <title>Sonho Gourmet</title>
 
     <link rel="stylesheet" href="assets/styles/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -20,7 +21,7 @@
         </div>
     </header>
 
-    <section class="content">
+    <section class="main">
         <div class="menu">
             <div class="menu__bg"></div>
             <div class="menu__items">
@@ -64,42 +65,52 @@
                 </div>
             </div>
         </div>
-        <div class="links">
-            <div class="links__container">
-                <div class="links__title">
-                    <p>Todos os links</p>
+
+        <div class="content">
+            <div class="links">
+                <div class="links__container">
+                    <div class="links__title">
+                        <p>Todos os links</p>
+                    </div>
+                    
+                    <a href="#" class="link">
+                        <div class="link__icon">
+                            <img src="assets/img/icon-whatsapp.svg" alt="Icone Whatsapp">
+                        </div>
+                        <div class="link__title">
+                            <p>Whatsapp</p>
+                        </div>
+                        <div class="link__copy">
+                            <img src="assets/img/icon-copy.svg" alt="Icone copiar link">
+                        </div>
+                    </a>
+        
+                    <a href="https://www.instagram.com/sonhogourmett_/" class="link">
+                        <div class="link__icon">
+                            <img src="assets/img/icon-instagram.svg" alt="Icone Whatsapp">
+                        </div>
+                        <div class="link__title">
+                            <p>Instagram</p>
+                        </div>
+                        <div class="link__copy">
+                            <img src="assets/img/icon-copy.svg" alt="Icone copiar link">
+                        </div>
+                    </a>
                 </div>
-                
-                <a href="#" class="link">
-                    <div class="link__icon">
-                        <img src="assets/img/icon-whatsapp.svg" alt="Icone Whatsapp">
-                    </div>
-                    <div class="link__title">
-                        <p>Whatsapp</p>
-                    </div>
-                    <div class="link__copy">
-                        <img src="assets/img/icon-copy.svg" alt="Icone copiar link">
-                    </div>
-                </a>
-    
-                <a href="#" class="link">
-                    <div class="link__icon">
-                        <img src="assets/img/icon-instagram.svg" alt="Icone Whatsapp">
-                    </div>
-                    <div class="link__title">
-                        <p>Instagram</p>
-                    </div>
-                    <div class="link__copy">
-                        <img src="assets/img/icon-copy.svg" alt="Icone copiar link">
-                    </div>
-                </a>
+            </div>
+            <div class="cardapio">
+                Cardapio
+            </div>
+            <div class="cardapio_natal">
+                Cardapio Natal
             </div>
         </div>
     </section>
 
-    <script src="/assets/scripts/viewport.js"></script>
+    <script src="assets/scripts/script.js"></script>
+    <!--<script src="/assets/scripts/viewport.js"></script>
     <script>
       window.viewportUnitsBuggyfill.init({ force: true });
-    </script>
+    </script>-->
 </body>
 </html>

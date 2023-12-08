@@ -1,4 +1,14 @@
-.content{
+@keyframes leftSlide {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.main{
     width: 100%;
     height: 70%;
 }
@@ -105,12 +115,13 @@
 }
 
 .links{
-    position: relative;
-
-    height: 80%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     padding: 10px 40px;
     background-color: var(--white);
     overflow-x: hidden;
+
 }
 
 .links__title{
@@ -162,4 +173,26 @@
 
 .link__copy > img{
     width: 16px;
+}
+
+.cardapio{
+    position: absolute;
+
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    
+}
+
+.cardapio_natal{
+    position: absolute;
+
+    top: 0;
+    left: 200%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    
 }
