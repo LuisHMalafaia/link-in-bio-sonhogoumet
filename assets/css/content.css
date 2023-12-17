@@ -191,6 +191,12 @@
 
     background-color: var(--white);
     overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.cardapio::-webkit-scrollbar {
+    display: none;
 }
 
 .cardapio__title{
@@ -292,5 +298,13 @@
 }
 
 .items{
-    display: none;
+    max-height: 0px;
+
+    overflow: hidden;
+    transition: max-height .5s ease-out; 
+}
+
+.animated {
+    max-height: 3000px;
+    transition: max-height .7s ease-in;
 }

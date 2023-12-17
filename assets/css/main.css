@@ -20,7 +20,35 @@ body{
     height: 100vh;
     background-color: var(--primary-color);
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.body__content{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+/*769px — 991px*/
+@media screen and (min-width: 769px){
+    body{
+        background-color: #8F4B25;
+        /*background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/logo.png"), #8F4B25;*/
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), linear-gradient(135deg, #ffffff55 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #ffffff 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #ffffff55 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #ffffff 25%, #8F4B25 25%) 0px 0/ 80px 80px;
+    }
+
+    .body__content{
+        max-width: 425px;
+        height: 80vh;
+        overflow: hidden;
+        border: 2px solid var(--white);
+        border-radius: 15px;
+    }
+}
+
 
 .content{
     position: relative;

@@ -9,460 +9,462 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="header__profile">
-            <div class="header__profile__photo">
-                <img src="assets/images/logo.png" alt="Logo Sonho Gourmet">
+    <div class=body__content>
+        <header class="header">
+            <div class="header__profile">
+                <div class="header__profile__photo">
+                    <img src="assets/images/logo.png" alt="Logo Sonho Gourmet">
+                </div>
+                <div class="header__profile__content">
+                    <p class="header__profile__content__title">Sonho Gourmet</p>
+                    <p class="header__profile__content__description">Loja de Doces Gourmet</p>
+                </div>
             </div>
-            <div class="header__profile__content">
-                <p class="header__profile__content__title">Sonho Gourmet</p>
-                <p class="header__profile__content__description">Loja de Doces Gourmet</p>
+        </header>
+    
+        <section class="main">
+            <!-- MENU -->
+            <div class="menu">
+                <div class="menu__bg"></div>
+                <div class="menu__items">
+                    <div class="menu__items__container">
+                        <a href="#" class="menu__item" id="links">
+                            <div class="menu__item__content">
+                                <div class="menu__item__icon">
+                                    <img src="assets/images/icon-link.svg" alt="">
+                                </div>
+                                <div class="menu__item__title">
+                                    <p>Links úteis</p>
+                                </div>
+                            </div>
+                            <div class="menu__item__line"></div>
+                        </a> 
+    
+                        <a href="#" class="menu__item" id="cardapio">
+                            <div class="menu__item__content">
+                                <div class="menu__item__icon">
+                                    <img src="assets/images/icon-book.svg" alt="">
+                                </div>
+                                <div class="menu__item__title">
+                                    <p>Cardápio</p>
+                                </div>
+                            </div>
+                            <div class="menu__item__line"></div>
+                        </a> 
+    
+                        <a href="#" class="menu__item" id="info">
+                            <div class="menu__item__content">
+                                <div class="menu__item__icon">
+                                    <img src="assets/images/icon-info.svg" alt="">
+                                </div>
+                                <div class="menu__item__title">
+                                    <p>Informações</p>
+                                </div>
+                            </div>
+                            <div class="menu__item__line"></div>
+                        </a>
+    
+                    </div>
+                </div>
             </div>
-        </div>
-    </header>
-
-    <section class="main">
-        <!-- MENU -->
-        <div class="menu">
-            <div class="menu__bg"></div>
-            <div class="menu__items">
-                <div class="menu__items__container">
-                    <a href="#" class="menu__item" id="links">
-                        <div class="menu__item__content">
-                            <div class="menu__item__icon">
-                                <img src="assets/images/icon-link.svg" alt="">
-                            </div>
-                            <div class="menu__item__title">
-                                <p>Links úteis</p>
-                            </div>
+    
+            <div class="content">
+    
+                <!-- LINKS -->
+                <div class="links">
+                    <div class="links__container">
+                        <div class="links__title">
+                            <p>Todos os links</p>
                         </div>
-                        <div class="menu__item__line"></div>
-                    </a> 
-
-                    <a href="#" class="menu__item" id="cardapio">
-                        <div class="menu__item__content">
-                            <div class="menu__item__icon">
-                                <img src="assets/images/icon-book.svg" alt="">
+                        
+                        <a href="#" class="link">
+                            <div class="link__icon">
+                                <img src="assets/images/icon-whatsapp.svg" alt="Icone Whatsapp">
                             </div>
-                            <div class="menu__item__title">
+                            <div class="link__title">
+                                <p>Whatsapp</p>
+                            </div>
+                            <div class="link__copy">
+                                <img src="assets/images/icon-copy.svg" alt="Icone copiar link">
+                            </div>
+                        </a>
+            
+                        <a href="https://www.instagram.com/sonhogourmett_/" class="link">
+                            <div class="link__icon">
+                                <img src="assets/images/icon-instagram.svg" alt="Icone Whatsapp">
+                            </div>
+                            <div class="link__title">
+                                <p>Instagram</p>
+                            </div>
+                            <div class="link__copy">
+                                <img src="assets/images/icon-copy.svg" alt="Icone copiar link">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- CARDAPIO -->
+                <div class="cardapio">
+                    <div class="cardapio__container">
+                        <div class="cardapio__products">
+                            
+                            <div class="cardapio__title">
                                 <p>Cardápio</p>
                             </div>
-                        </div>
-                        <div class="menu__item__line"></div>
-                    </a> 
-
-                    <a href="#" class="menu__item" id="info">
-                        <div class="menu__item__content">
-                            <div class="menu__item__icon">
-                                <img src="assets/images/icon-info.svg" alt="">
+    
+                            <div class="cardapio__title" id="brig">
+                                <img src="assets/images/icon-arrow.svg" alt="">
+                                <p>Brigadeiros</p>
                             </div>
-                            <div class="menu__item__title">
-                                <p>Informações</p>
-                            </div>
-                        </div>
-                        <div class="menu__item__line"></div>
-                    </a>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="content">
-
-            <!-- LINKS -->
-            <div class="links">
-                <div class="links__container">
-                    <div class="links__title">
-                        <p>Todos os links</p>
-                    </div>
-                    
-                    <a href="#" class="link">
-                        <div class="link__icon">
-                            <img src="assets/images/icon-whatsapp.svg" alt="Icone Whatsapp">
-                        </div>
-                        <div class="link__title">
-                            <p>Whatsapp</p>
-                        </div>
-                        <div class="link__copy">
-                            <img src="assets/images/icon-copy.svg" alt="Icone copiar link">
-                        </div>
-                    </a>
+                            
+                            <div class="cardapio__products items" id="items__brig">
+                                <div class="cardapio__text">
+                                    <p>Mínimo de 25 unidades por sabor!</p>
+                                </div>
         
-                    <a href="https://www.instagram.com/sonhogourmett_/" class="link">
-                        <div class="link__icon">
-                            <img src="assets/images/icon-instagram.svg" alt="Icone Whatsapp">
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/brig_tradicional.jpg" alt="Tradicional">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Tradicional</p>
+                                        <p>R$ 1,50 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/brig_beijinho.JPG" alt="Beijinho">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Beijinho</p>
+                                        <p>R$ 1,50 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/brig_confete.JPG" alt="Confete">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Confete</p>
+                                        <p>R$ 1,50 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/brig_ferrero.jpg" alt="Ferrero">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Ferrero</p>
+                                        <p>R$ 1,60 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="" alt="Churros">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Churros</p>
+                                        <p>R$ 1,60 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="" alt="Ninho com Nutella">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Ninho com Nutella</p>
+                                        <p>R$ 1,60 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="" alt="Paçoca">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Paçoca</p>
+                                        <p>R$ 1,50 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="" alt="Sensação">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Sensação</p>
+                                        <p>R$ 1,60 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="" alt="Morango">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Morango</p>
+                                        <p>R$ 1,50 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="" alt="Meio Amargo">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Meio Amargo</p>
+                                        <p>R$ 1,50 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="" alt="Kinder">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Kinder</p>
+                                        <p>R$ 1,60 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="" alt="Dois Amores">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Dois Amores</p>
+                                        <p>R$ 1,50 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="" alt="Stikadinho">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Stikadinho</p>
+                                        <p>R$ 1,60 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="" alt="Surpresa de Uva">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Surpresa de Uva</p>
+                                        <p>R$ 1,60 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="" alt="Napolitano">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Napolitano</p>
+                                        <p>R$ 1,60 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/brig_caipirinha.jpg" alt="Caipirinha">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Caipirinha</p>
+                                        <p>R$ 3,00 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/brig_whiskey.jpg" alt="Whiskey">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Whiskey</p>
+                                        <p>R$ 3,00 (~18g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/caixa_brigadeiro.jpg" alt="Caixa 4 Brigadeiros">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Caixa com 4 brigadeiros</p>
+                                        <p>R$ 10,00 (~72g)</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/brigadeiro_unitario.jpg" alt="Brigadeiro unitário">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Brigadeiro Unitário</p>
+                                        <p>R$ 2,50 (~72g)</p>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+    
+                            <div class="cardapio__title" id="coxinha">
+                                <img src="assets/images/icon-arrow.svg" alt="">
+                                <p>Coxinha de Morango</p>
+                            </div>
+    
+                            <div class="cardapio__products items" id="items__coxinha">
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/coxinha_brigadeiro.JPG" alt="Coxinha de Brigadeiro">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Brigadeiro</p>
+                                        <p>R$ 8,00</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/coxinha_ninho.JPG" alt="Coxinha de Ninho c/ Nutella">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Ninho c/ Nutella</p>
+                                        <p>R$ 8,00</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/coxinha_ferrero.JPG" alt="Coxinha de Ferrero">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Ferrero</p>
+                                        <p>R$ 8,00</p>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+    
+                            <div class="cardapio__title" id="brownie">
+                                <img src="assets/images/icon-arrow.svg" alt="">
+                                <p>Brownie</p>
+                            </div>
+    
+                            <div class="cardapio__products items" id="items__brownie">
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/mini_brownie.JPG" alt="Mini Brownie">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Mini Brownie</p>
+                                        <p class="product__description">- Brigadeiro, Nutella ou Doce de Leite</p>
+                                        <p>R$ 2,00</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/brownie_tradicional.jpg" alt="Brownie Tradicional">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Brownie Tradicional</p>
+                                        <p>R$ 4,00</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="" alt="Brownie Recheado">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Brownie Recheado</p>
+                                        <p class="product__description">- Brigadeiro, Ninho c/ Nutella ou Doce de Leite</p>
+                                        <p>R$ 8,00</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/bolo_brownie.JPG" alt="Bolo de Brownie">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Bolo de Brownie</p>
+                                        <p class="product__description">- Brigadeiro, Ninho c/ Nutella ou Doce de Leite</p>
+                                        <p>R$ 45,00</p>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+    
+                            <div class="cardapio__title" id="pote">
+                                <img src="assets/images/icon-arrow.svg" alt="">
+                                <p>Bombom no Pote</p>
+                            </div>
+    
+                            <div class="cardapio__products items" id="items__pote">
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/bombom_morango.JPG" alt="Bombom no Pote de Morango">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Morango</p>
+                                        <p>R$ 10,00</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/bombom_uva.jpg" alt="Bombom no Pote de Uva">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Uva</p>
+                                        <p>R$ 10,00</p>
+                                    </div>
+                                </div>
+        
+                                <div class="product">
+                                    <div class="product__image">
+                                        <img src="assets/images/banofe.jpg" alt="Banofe">
+                                    </div>
+                                    <div class="product__text">
+                                        <p>Banofe</p>
+                                        <p>R$ 10,00</p>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+    
                         </div>
-                        <div class="link__title">
-                            <p>Instagram</p>
-                        </div>
-                        <div class="link__copy">
-                            <img src="assets/images/icon-copy.svg" alt="Icone copiar link">
-                        </div>
-                    </a>
+                    </div>
                 </div>
-            </div>
-
-            <!-- CARDAPIO -->
-            <div class="cardapio">
-                <div class="cardapio__container">
-                    <div class="cardapio__products">
-                        
-                        <div class="cardapio__title">
-                            <p>Cardápio</p>
+    
+                <div class="info">
+                    <div class="info__container">
+                        <div class="info__title">
+                            <p>Informações</p>
                         </div>
-
-                        <div class="cardapio__title" id="brig">
-                            <img src="assets/images/icon-arrow.svg" alt="">
-                            <p>Brigadeiros</p>
+                        <div class="info__content">
+                            <p class="info__content__title">Como fazer o pedido</p>
+                            <p class="info__content__text">Entre na aba de Links Úteis e clique no botão do Whatsapp que você será redirecionado para o nosso contato.</p>
+    
+                            <p class="info__content__title">Encomendas e Pagamentos</p>
+                            <p class="info__content__text">Sua encomenda será confirmada após o pagamento de 50% do valor total adiantado e o restante do valor deverá ser pago na data da entrega. Aceitamos pagamentos via Pix, Dinheiro, Cartão de Crédito e Débito.</p>
+    
+                            <p class="info__content__title">Entregas</p>
+                            <p class="info__content__text">Realizamos entregas em São Paulo Capital, consulte as taxas no nosso Whatsapp.</p>
                         </div>
-                        
-                        <div class="cardapio__products items" id="items__brig">
-                            <div class="cardapio__text">
-                                <p>Mínimo de 25 unidades por sabor!</p>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/brig_tradicional.jpg" alt="Tradicional">
-                                </div>
-                                <div class="product__text">
-                                    <p>Tradicional</p>
-                                    <p>R$ 1,50 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/brig_beijinho.JPG" alt="Beijinho">
-                                </div>
-                                <div class="product__text">
-                                    <p>Beijinho</p>
-                                    <p>R$ 1,50 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/brig_confete.JPG" alt="Confete">
-                                </div>
-                                <div class="product__text">
-                                    <p>Confete</p>
-                                    <p>R$ 1,50 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/brig_ferrero.jpg" alt="Ferrero">
-                                </div>
-                                <div class="product__text">
-                                    <p>Ferrero</p>
-                                    <p>R$ 1,60 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="" alt="Churros">
-                                </div>
-                                <div class="product__text">
-                                    <p>Churros</p>
-                                    <p>R$ 1,60 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="" alt="Ninho com Nutella">
-                                </div>
-                                <div class="product__text">
-                                    <p>Ninho com Nutella</p>
-                                    <p>R$ 1,60 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="" alt="Paçoca">
-                                </div>
-                                <div class="product__text">
-                                    <p>Paçoca</p>
-                                    <p>R$ 1,50 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="" alt="Sensação">
-                                </div>
-                                <div class="product__text">
-                                    <p>Sensação</p>
-                                    <p>R$ 1,60 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="" alt="Morango">
-                                </div>
-                                <div class="product__text">
-                                    <p>Morango</p>
-                                    <p>R$ 1,50 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="" alt="Meio Amargo">
-                                </div>
-                                <div class="product__text">
-                                    <p>Meio Amargo</p>
-                                    <p>R$ 1,50 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="" alt="Kinder">
-                                </div>
-                                <div class="product__text">
-                                    <p>Kinder</p>
-                                    <p>R$ 1,60 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="" alt="Dois Amores">
-                                </div>
-                                <div class="product__text">
-                                    <p>Dois Amores</p>
-                                    <p>R$ 1,50 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="" alt="Stikadinho">
-                                </div>
-                                <div class="product__text">
-                                    <p>Stikadinho</p>
-                                    <p>R$ 1,60 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="" alt="Surpresa de Uva">
-                                </div>
-                                <div class="product__text">
-                                    <p>Surpresa de Uva</p>
-                                    <p>R$ 1,60 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="" alt="Napolitano">
-                                </div>
-                                <div class="product__text">
-                                    <p>Napolitano</p>
-                                    <p>R$ 1,60 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/brig_caipirinha.jpg" alt="Caipirinha">
-                                </div>
-                                <div class="product__text">
-                                    <p>Caipirinha</p>
-                                    <p>R$ 3,00 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/brig_whiskey.jpg" alt="Whiskey">
-                                </div>
-                                <div class="product__text">
-                                    <p>Whiskey</p>
-                                    <p>R$ 3,00 (~18g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/caixa_brigadeiro.jpg" alt="Caixa 4 Brigadeiros">
-                                </div>
-                                <div class="product__text">
-                                    <p>Caixa com 4 brigadeiros</p>
-                                    <p>R$ 10,00 (~72g)</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/brigadeiro_unitario.jpg" alt="Brigadeiro unitário">
-                                </div>
-                                <div class="product__text">
-                                    <p>Brigadeiro Unitário</p>
-                                    <p>R$ 2,50 (~72g)</p>
-                                </div>
-                            </div>
-                            <br>
-                        </div>
-
-                        <div class="cardapio__title" id="coxinha">
-                            <img src="assets/images/icon-arrow.svg" alt="">
-                            <p>Coxinha de Morango</p>
-                        </div>
-
-                        <div class="cardapio__products items" id="items__coxinha">
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/coxinha_brigadeiro.JPG" alt="Coxinha de Brigadeiro">
-                                </div>
-                                <div class="product__text">
-                                    <p>Brigadeiro</p>
-                                    <p>R$ 8,00</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/coxinha_ninho.JPG" alt="Coxinha de Ninho c/ Nutella">
-                                </div>
-                                <div class="product__text">
-                                    <p>Ninho c/ Nutella</p>
-                                    <p>R$ 8,00</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/coxinha_ferrero.JPG" alt="Coxinha de Ferrero">
-                                </div>
-                                <div class="product__text">
-                                    <p>Ferrero</p>
-                                    <p>R$ 8,00</p>
-                                </div>
-                            </div>
-                            <br>
-                        </div>
-
-                        <div class="cardapio__title" id="brownie">
-                            <img src="assets/images/icon-arrow.svg" alt="">
-                            <p>Brownie</p>
-                        </div>
-
-                        <div class="cardapio__products items" id="items__brownie">
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/mini_brownie.JPG" alt="Mini Brownie">
-                                </div>
-                                <div class="product__text">
-                                    <p>Mini Brownie</p>
-                                    <p class="product__description">- Brigadeiro, Nutella ou Doce de Leite</p>
-                                    <p>R$ 2,00</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/brownie_tradicional.jpg" alt="Brownie Tradicional">
-                                </div>
-                                <div class="product__text">
-                                    <p>Brownie Tradicional</p>
-                                    <p>R$ 4,00</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="" alt="Brownie Recheado">
-                                </div>
-                                <div class="product__text">
-                                    <p>Brownie Recheado</p>
-                                    <p class="product__description">- Brigadeiro, Ninho c/ Nutella ou Doce de Leite</p>
-                                    <p>R$ 8,00</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/bolo_brownie.JPG" alt="Bolo de Brownie">
-                                </div>
-                                <div class="product__text">
-                                    <p>Bolo de Brownie</p>
-                                    <p class="product__description">- Brigadeiro, Ninho c/ Nutella ou Doce de Leite</p>
-                                    <p>R$ 45,00</p>
-                                </div>
-                            </div>
-                            <br>
-                        </div>
-
-                        <div class="cardapio__title" id="pote">
-                            <img src="assets/images/icon-arrow.svg" alt="">
-                            <p>Bombom no Pote</p>
-                        </div>
-
-                        <div class="cardapio__products items" id="items__pote">
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/bombom_morango.JPG" alt="Bombom no Pote de Morango">
-                                </div>
-                                <div class="product__text">
-                                    <p>Morango</p>
-                                    <p>R$ 10,00</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/bombom_uva.jpg" alt="Bombom no Pote de Uva">
-                                </div>
-                                <div class="product__text">
-                                    <p>Uva</p>
-                                    <p>R$ 10,00</p>
-                                </div>
-                            </div>
-    
-                            <div class="product">
-                                <div class="product__image">
-                                    <img src="assets/images/banofe.jpg" alt="Banofe">
-                                </div>
-                                <div class="product__text">
-                                    <p>Banofe</p>
-                                    <p>R$ 10,00</p>
-                                </div>
-                            </div>
-                            <br>
-                        </div>
-
                     </div>
                 </div>
             </div>
-
-            <div class="info">
-                <div class="info__container">
-                    <div class="info__title">
-                        <p>Informações</p>
-                    </div>
-                    <div class="info__content">
-                        <p class="info__content__title">Como fazer o pedido</p>
-                        <p class="info__content__text">Entre na aba de Links Úteis e clique no botão do Whatsapp que você será redirecionado para o nosso contato.</p>
-
-                        <p class="info__content__title">Encomendas e Pagamentos</p>
-                        <p class="info__content__text">Sua encomenda será confirmada após o pagamento de 50% do valor total adiantado e o restante do valor deverá ser pago na data da entrega. Aceitamos pagamentos via Pix, Dinheiro, Cartão de Crédito e Débito.</p>
-
-                        <p class="info__content__title">Entregas</p>
-                        <p class="info__content__text">Realizamos entregas em São Paulo Capital, consulte as taxas no nosso Whatsapp.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <script src="assets/scripts/script.js"></script>
     <script src="assets/scripts/viewport.js"></script>

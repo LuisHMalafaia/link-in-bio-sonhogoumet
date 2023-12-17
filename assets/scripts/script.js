@@ -38,8 +38,8 @@ $(document).ready(function(){
     }
 
     //Toggle button
-    $('#items__brig').css('display', 'flex');
-    $('#brig').children('img').css('rotate', '90deg');
+    /*$('#items__brig').css('display', 'flex');
+    $('#brig').children('img').css('rotate', '90deg');*/
 
     $(".cardapio__title").click(function(){
         let id = $(this).attr('id');
@@ -48,10 +48,10 @@ $(document).ready(function(){
         rotate = (rotate == 'none') ? '0deg' : rotate;
 
         if(rotate == '0deg'){
-            $('#items__' + id).css('display', 'flex');
+            $('#items__' + id).addClass("animated");
             $(this).children('img').css('rotate', '90deg');
         }else {
-            $('#items__' + id).css('display', 'none');
+            $('#items__' + id).removeClass("animated");
             $(this).children('img').css('rotate', '0deg');
         }    
 
