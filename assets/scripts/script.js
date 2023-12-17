@@ -6,7 +6,7 @@ $(document).ready(function(){
 
     $("#links").click(() => menuAnimation($("#links"), $(".links")));
     $("#cardapio").click(() => menuAnimation($("#cardapio"), $(".cardapio")));
-    //$("#cardapio-natal").click(() => menuAnimation($("#cardapio-natal"), $(".cardapio_natal")));
+    $("#info").click(() => menuAnimation($("#info"), $(".info")));
 
     function menuAnimation(elem, content){
         active_button.children(".menu__item__line").css("background-color", white);
@@ -23,18 +23,38 @@ $(document).ready(function(){
             pos = 0;
         else if(id_item == "cardapio")
             pos = scroll_width/2;
-        //else if(id_item == "cardapio-natal")
-            //pos = scroll_width;
+        else if(id_item == "info")
+            pos = scroll_width;
 
         $(".menu__items__container").animate({scrollLeft: pos});
 
         let link = parseInt($(".links").css("left").replace("px", "") - content.css("left").replace("px", "")) + "px";
         let cardapio = parseInt($(".cardapio").css("left").replace("px", "") - content.css("left").replace("px", "")) + "px";
-        //let cardapio_natal = parseInt($(".cardapio_natal").css("left").replace("px", "") - content.css("left").replace("px", "")) + "px"
+        let info = parseInt($(".info").css("left").replace("px", "") - content.css("left").replace("px", "")) + "px"
 
         $(".links").animate({left: link});
         $(".cardapio").animate({left: cardapio});
-        //$(".cardapio_natal").animate({left: cardapio_natal});
+        $(".info").animate({left: info});
     }
+
+    //Toggle button
+    //$('#items__brig').css('display', 'flex');
+    //$('#brig').children('img').css('rotate', '90deg');
+
+    $(".cardapio__title").click(function(){
+        let id = $(this).attr('id');
+        let rotate = $(this).children('img').css('rotate');
+
+        rotate = (rotate == 'none') ? '0deg' : rotate;
+
+        if(rotate == '0deg'){
+            $('#items__' + id).css('display', 'flex');
+            $(this).children('img').css('rotate', '90deg');
+        }else {
+            $('#items__' + id).css('display', 'none');
+            $(this).children('img').css('rotate', '0deg');
+        }    
+
+    });
 
 });
