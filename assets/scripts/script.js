@@ -38,8 +38,8 @@ $(document).ready(function(){
     }
 
     //Toggle button
-    //$('#items__brig').css('display', 'flex');
-    //$('#brig').children('img').css('rotate', '90deg');
+    $('#items__brig').css('display', 'flex');
+    $('#brig').children('img').css('rotate', '90deg');
 
     $(".cardapio__title").click(function(){
         let id = $(this).attr('id');
