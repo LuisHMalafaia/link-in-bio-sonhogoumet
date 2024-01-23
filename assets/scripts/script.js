@@ -1,5 +1,6 @@
-const primaryColor = "#8F4B25";
-const white = "#FFFFFF";
+const primaryColor = "#3E2723";
+const secondaryColor = "#D81B60";
+const white = "#FFF8E1";
 
 $(document).ready(function(){
     var active_button = $("#links");
@@ -9,22 +10,23 @@ $(document).ready(function(){
     $("#info").click(() => menuAnimation($("#info"), $(".info")));
 
     function menuAnimation(elem, content){
+        let id_item = active_button.get(0).id;
+        let src = id_item == "links" ? "icon-link.svg" : (id_item == "cardapio" ? "icon-book.svg" : "icon-info.svg");
+
+        active_button.children(".menu__item__content").children(".menu__item__title").css("color", primaryColor);
         active_button.children(".menu__item__line").css("background-color", white);
+        active_button.children(".menu__item__content").children(".menu__item__icon").children("img").attr('src', '/assets/images/' + src);
         active_button = elem;
 
-        elem.children(".menu__item__line").css("background-color", primaryColor);
+        id_item = elem.get(0).id;
+        src = id_item == "links" ? "icon-link2.svg" : (id_item == "cardapio" ? "icon-book2.svg" : "icon-info2.svg");
 
-        /*console.log(content.css("left"));*/
-        let id_item = elem.get(0).id;
-        let pos = 0;
+        elem.children(".menu__item__line").css("background-color", secondaryColor);
+        elem.children(".menu__item__content").children(".menu__item__title").css("color", secondaryColor);
+        elem.children(".menu__item__content").children(".menu__item__icon").children("img").attr('src', '/assets/images/' + src);
+
         let scroll_width =  $(".menu__items__container").get(0).scrollWidth - $(".menu__items").width();
-
-        if(id_item == "links")  
-            pos = 0;
-        else if(id_item == "cardapio")
-            pos = scroll_width/2;
-        else if(id_item == "info")
-            pos = scroll_width;
+        let pos = id_item == "links" ? 0 : (id_item == "cardapio" ? scroll_width/2 : scroll_width);
 
         $(".menu__items__container").animate({scrollLeft: pos});
 
@@ -36,6 +38,10 @@ $(document).ready(function(){
         $(".cardapio").animate({left: cardapio});
         $(".info").animate({left: info});
     }
+
+    $("#links").click(function (){
+        console.log($(this).attr('id'));
+    });
 
     //Toggle button
     /*$('#items__brig').css('display', 'flex');
