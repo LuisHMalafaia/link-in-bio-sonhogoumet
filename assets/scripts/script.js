@@ -15,7 +15,7 @@ $(document).ready(function(){
 
         active_button.children(".menu__item__content").children(".menu__item__title").css("color", primaryColor);
         active_button.children(".menu__item__line").css("background-color", white);
-        active_button.children(".menu__item__content").children(".menu__item__icon").children("img").attr('src', '/assets/images/' + src);
+        active_button.children(".menu__item__content").children(".menu__item__icon").children("img").attr('src', 'assets/images/' + src);
         active_button = elem;
 
         id_item = elem.get(0).id;
@@ -23,7 +23,7 @@ $(document).ready(function(){
 
         elem.children(".menu__item__line").css("background-color", secondaryColor);
         elem.children(".menu__item__content").children(".menu__item__title").css("color", secondaryColor);
-        elem.children(".menu__item__content").children(".menu__item__icon").children("img").attr('src', '/assets/images/' + src);
+        elem.children(".menu__item__content").children(".menu__item__icon").children("img").attr('src', 'assets/images/' + src);
 
         let scroll_width =  $(".menu__items__container").get(0).scrollWidth - $(".menu__items").width();
         let pos = id_item == "links" ? 0 : (id_item == "cardapio" ? scroll_width/2 : scroll_width);
